@@ -1,0 +1,42 @@
+body{
+  background-color: aqua;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title . ."
+    "content content content"
+    "author . date";
+}
+.title { grid-area: title; }
+.content { grid-area: content; }
+.author { grid-area: author; }
+.date { grid-area: date; }
+
+.paste{
+  background-color: white;
+  width: 60%;
+  border-style: solid;
+  margin-bottom: 10px;
+  margin-left: 270px;
+  margin-top: 15px;
+}
+.paste > div {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.author{
+  font-weight: bold;
+}
+.date{
+  font-weight: bold;
+}
